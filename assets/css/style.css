@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-size: auto;    
+    background-image: url('https://i.pinimg.com/originals/74/7a/40/747a401c0daac6b580fd1ffc4e5c3039.gif');
+}
+
+header { 
+    background-color: #ffffff;
+    border-color: #cccccc;
+    border-bottom-width: medium;
+    border-bottom-style: solid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow: hidden;
+    margin-bottom: 38px;
+    line-height: 2.5;
+    width:100%;
+}
+.header p {
+    float: left;
+    text-align: center;
+    padding: 20px;
+}
+.header-right {
+    float: right;
+    padding: 20px;
+    color: grey;
+    text-align: justify;
+    text-decoration: none;
+    margin-right: 150px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #cccccc;
+}
+
+#juan {
+    background-color: #4aaaa5;
+    color: white;
+    width: 251px;
+    height: 91px;
+    margin-left: 219px;
+    font-size: 18px;
+}
+
+.active {
+    margin-right: 20px;
+}
+
+.portfolio {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.contact {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+.main-content {
+    margin-left: 219px;
+    margin-right: 2.5rem;
+    margin-bottom: 115px;
+    background-size: auto;
+    background-color: #ffffff;
+    border-color: #dddddd;
+    border-style: solid;
+    width: 960px;
+    height: 500px;
+    padding: 124 1131 597 220px;
+}   
+
+h1 {
+    color: #4aaaa5;
+    padding: 20px 20px 20px 0;
+    border-color: #cccccc;
+    border-bottom-width: thick;
+    border-bottom-style: solid;
+    margin: 10px 30px 0 30px;
+    font-size: 33px
+}
+
+img {
+    height: 142px;
+    width: 188px;
+    padding: ;
+    float: left;
+    margin: 30px;
+}
+
+img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.paragraph {
+    text-align: left;
+    line-height: 1.5;
+}
+
+
+
+footer {
+    background-color: #666666;
+    text-align: center;
+    height: 56px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    border-color: #4aaaa5;
+    border-top-width: 10px;
+    border-top-style: solid;
+    flex-shrink: 0;
+}
+
+@-ms-viewport{
+    width: device-width;
+  }
+
+  /* Contact CSS styling */
+  .container {
+    width:100%;
+    margin-left: 30px;
+  }
+
+  input[type=submit]:hover {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmg7wODJQKREXJFn6YryvcQHtKtILXLzKh-SYP9RaB5lCGWXFg);
+  }
+  
+  #name {
+    width: 897px;
+  }
+
+  #email {
+    width: 897px;
+  }
+
+  #message {
+    width: 897px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  
+  #submit {
+    width: 115px;
+    height: 40px;
+  }
+
+  /* portfolio css styling */
+ .row1 {
+     clear: right;
+
+ }
+
+ .text-block {
+    position: absolute;
+    left: 280px;
+    bottom: 400px;
+    background-color: black;
+    color: white;
+    padding-left: 80px;
+    padding-right: 82px;
+    
+ }
+
+.text-block2 {
+    position: absolute;
+    left: 529px;
+    bottom: 400px;
+    background-color: black;
+    color: white;
+    padding-left: 75px;
+    padding-right: 75px;
+    
+}
+
+
+
+.text-block3 {
+    position: absolute;
+    left: 280px;
+    top:550px;
+    background-color: black;
+    color: white;
+    padding-left: 80px;
+    padding-right: 70px;
+
+}
+
+.text-block4 {
+    position: absolute;
+    left: 529px;
+    top: 550px;
+    background-color: black;
+    color: white;
+    padding-left: 75px;
+    padding-right: 75px;
+
+}
+
+.text-block5 {
+    position: absolute;
+    left: 280px;
+    top: 750px;
+    background-color: black;
+    color: white;
+    padding-left: 80px;
+    padding-right: 70px;
+}
