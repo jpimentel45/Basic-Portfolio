@@ -207,7 +207,7 @@ p.copyright {
     top: 128px;
     background-color: #4aaaa5;
     color: white;
-    padding: 20px 88px 20px 88px
+    padding: 20px 89px 20px 88px
 }
 
 .text-block3 {
@@ -225,14 +225,14 @@ p.copyright {
     top: 330px;
     background-color: #4aaaa5;
     color: white;
-    padding: 20px 59px 20px 59px
+    padding: 20px 60px 20px 59px
 
 }
 
 .text-block5 {
     position: absolute;
     left: 5px;
-    bottom:109px;
+    bottom:159px;
     background-color: #4aaaa5;
     color: white;
     padding: 20px 60px 20px 60px;
@@ -259,4 +259,8 @@ p.copyright {
     .column {
       width: 100%;
     }
+  }
+
+  #port-cont {
+    height:750px;
   }
