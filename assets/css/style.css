@@ -255,12 +255,79 @@ p.copyright {
     clear: both;
     display: table;
   }
-  @media screen and (max-width: 500px) {
-    .column {
-      width: 100%;
-    }
-  }
 
-  #port-cont {
-    height:750px;
-  }
+ 
+
+    @media screen and (max-width: 980px) {
+      header {
+        position: static;
+      }
+      #juan {
+        margin: 0;
+        width: 100%
+      }
+      .header-right {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+      }
+      .main-content {
+        margin: 0;
+        width: 100%;
+      }
+
+      .text-block2, .text-block4 {
+        margin-right: 20px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      header {
+        position: static;
+      }
+      #juan {
+        margin: 0;
+        width: 100%
+      }
+      .header-right {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+      }
+      .main-content {
+        margin: 0;
+        width: 100%;
+      }
+  
+      .text-block2, .text-block4 {
+        margin-right: -192px;
+      }
+    }
+
+    @media screen and (max-width: 640px) {
+      header {
+        position: static;
+      }
+      #juan {
+        margin: 0;
+        width: 100%;
+      }
+      .header-right {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+      }
+      .main-content {
+        margin: 0;
+        width: 100%;
+      }
+      
+       .column {
+         width: 100%;
+       }
+     }
+   
+     #port-cont {
+       height:750px;
+     }
+   
