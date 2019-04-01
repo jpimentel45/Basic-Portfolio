@@ -1,3 +1,47 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 * {
     box-sizing: border-box; 
     margin: 0;
@@ -101,6 +145,7 @@ h1 {
     font-size: 33px
 }
 
+/* Try removing float left on one of the image tags not necessary on 2 locations */
 img {
     margin-top: 30px;
     margin-right: 20px;
@@ -128,6 +173,7 @@ img:hover {
   margin-right: 55px;
   margin-left: 277px;
   font-size: 18px;
+  line-height: 1.5;
 }
 
 
@@ -189,7 +235,22 @@ p.copyright {
     width: 115px;
     height: 40px;
   }
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
 
+@keyframes slidein {
+  from { 
+    margin-left: 100%;
+    width: 300%;
+  }
+  to { 
+    margin-left: 0%;
+    width: inherit;
+  }
+
+}
   /* portfolio css styling */
 
 
@@ -199,7 +260,7 @@ p.copyright {
     top: 130px;
     background-color: #4aaaa5;
     color: white;
-    padding: 20px 94px 20px 94px;
+    padding: 20px 64px 20px 94px;
   }
 .text-block2 {
     position: absolute;
@@ -255,6 +316,10 @@ p.copyright {
     clear: both;
     display: table;
   }
+  #port-cont {
+    height: 745px;
+  }
+
 
  
 
@@ -262,49 +327,93 @@ p.copyright {
       header {
         position: static;
       }
+      
       #juan {
-        margin: 0;
-        width: 100%
+      
+        margin-left: 40px;
       }
       .header-right {
-        width: 100%;
+       
         margin: 0;
         text-align: center;
       }
-      .main-content {
-        margin: 0;
-        width: 100%;
+      #img-port{
+        margin-left: 13px;
       }
+      
+      #index-container{ 
+        width: 60%;
+        margin-left: 40px;
+      }
+      .main-content {
+        margin-left: 40px;
+          width: 60%;
+        }
+#index-image {
+  padding-bottom: 0;
+}
+        .bp {
+          margin-left: 0;
+        }
 
       .text-block2, .text-block4 {
-        margin-right: 20px;
+        margin-right: -369px;
       }
+    }
+    #name, #email, #message {
+      width: 528px;
     }
 
     @media screen and (max-width: 768px) {
       header {
         position: static;
       }
+      #index-container {
+        width: 95%;
+        margin-left: 20px;
+        height: 440px;
+      }
+      #index-image {
+        padding: 0;
+      }
+      #img-port{
+        margin-left: 88px;
+        margin-bottom: 0;
+      }
+      .container {
+        margin-bottom: 250px;
+      }
+      .bp {
+        line-height: 1.5;
+        margin-left: 0;
+      }
       #juan {
-        margin: 0;
-        width: 100%
+        margin-left: 20px;
+        width: 32%
       }
       .header-right {
-        width: 100%;
-        margin: 0;
+        width: 55%;
+        margin-right: -38px;
         text-align: center;
       }
       .main-content {
         margin: 0;
-        width: 100%;
+        width: 728px;
+        margin-left:20px;
+        height: 440px;
       }
   
       .text-block2, .text-block4 {
-        margin-right: -192px;
+        margin-right: -229px;
       }
-    }
+
+      #name, #email, #message {
+        width: 93%;
+      }   
+     }
 
     @media screen and (max-width: 640px) {
+      /* Remove float left: at 640px to have everything collapse into single row */
       header {
         position: static;
       }
@@ -312,22 +421,86 @@ p.copyright {
         margin: 0;
         width: 100%;
       }
+
+      #index-image {
+        float:none;
+        width: 350px;
+        height: 300px;
+        margin-left: 88px;
+      }
+      #index-container {
+        height: 720px;
+      }
+      .container { 
+        margin-bottom: 150px;
+      }
+      
       .header-right {
         width: 100%;
         margin: 0;
         text-align: center;
       }
       .main-content {
-        margin: 0;
-        width: 100%;
+        margin-left: 25px;
+        width: 92%;
       }
-      
-       .column {
-         width: 100%;
+      .bp {
+        margin-left: 0;
+      }
+      img {
+        /* float: none; */
+        margin-left: 130px;
+        margin-bottom: 20px;
+        padding: 0;
+      }
+      .text-block {
+        margin-left: 126px; 
+        padding-right: 102px;
+        padding-left: 105px;
+        margin-top: 51px;
+      }
+
+       .text-block2 {
+         right: 418px;
+         top: 450px;
+         padding-right: 100px;
+         padding-left: 97px;
        }
-     }
+
+       .text-block3 {
+         top: 720px;
+         left: 130px;
+         padding-left: 105px;
+       }
+       
+       .text-block4 {
+         right: 418px;
+         top: 990px;
+         width: 270px;
+       }
+
+       .text-block5 {
+         left: 130px;
+         bottom: 138px;
+         width: 46%;
+       }
+     
    
      #port-cont {
-       height:750px;
+       height:1455px;
      }
-   
+     #img-port {
+       margin-left: 35px;
+     }
+.column {
+  float: none;
+  width: 0;
+  padding: 0;
+}
+
+.row {
+  width: 900px;
+  float: none;
+}
+}
+
